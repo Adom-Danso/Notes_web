@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title %}Notes &middot; Login{% endblock title
+%} {%block main_content %}
+<div
+  class="d-flex justify-content-center border border-top-0 border-primary-subtle p-3 mt-3 align-items-center container border-opacity-50 rounded-bottom text-center"
+  style="width: 500px">
+  <form method="POST">
+    <div class="mb-3">
+      <span
+        class="text-info fs-3 fw-medium border-bottom border-3 border-info ]"
+        >Login</span
+      >
+    </div>
+    <div class="form-floating mb-3">
+      <input
+        type="email"
+        name="email"
+        class="form-control"
+        placeholder="name@example.com"
+        id="floatingInput" />
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input
+        type="password"
+        name="password"
+        class="form-control"
+        placeholder="Password"
+        id="floatingInput" />
+      <label for="floatingInput">Password</label>
+    </div>
+    <button class="btn btn-primary btn-sm" type="submit" value="Submit">
+      Submit
+    </button>
+  </form>
+</div>
+{% endblock main_content %}

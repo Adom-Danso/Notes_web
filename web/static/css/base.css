@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+}
+
+.main-div {
+    padding: 0;
+    height: 100%;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-close:active,
+.btn-close:focus {
+    box-shadow: none;
+}
