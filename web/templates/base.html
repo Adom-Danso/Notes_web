@@ -21,7 +21,7 @@
         class="row bg-dark navbar navbar-expand-md bg-body-tertiary px-4"
         data-bs-theme="dark">
         <div class="container-fluid">
-          <div class="navbar-brand">Notes</div>
+          <span class="navbar-brand">Notes</span>
           <button
             class="navbar-toggler"
             type="button"
@@ -50,6 +50,9 @@
               </li>
               {% endif %}
             </ul>
+            {% if user.is_authenticated %}
+            <span class="navbar-text">{{ user.name }}</span>
+            {% endif %}
           </div>
         </div>
       </nav>
@@ -88,7 +91,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
 
-      <script
-      src="{{ url_for('static', filename='js/home.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
   </body>
 </html>

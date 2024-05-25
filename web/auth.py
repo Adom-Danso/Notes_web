@@ -55,6 +55,8 @@ def login():
                 return redirect(url_for('views.home'))
             else:
                 flash('Password is incorrect', category='error')
+        elif not email:
+            flash('Invalid email address.', category='error')
         else:
             flash('User does not exist.', category='error')
     return render_template('login.html', user=current_user)
