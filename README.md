@@ -1,2 +1,2 @@
 # Notes_web
-Website created with flask which accepts user logins and stores notes in a database
+A simple flask web application for creating notes and storing notes
